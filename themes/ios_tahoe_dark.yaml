@@ -94,6 +94,19 @@ ios_tahoe_dark:
   mdc-select-fill-color: "#2c2c2e"
   mdc-text-field-fill-color: "#2c2c2e"
 
+  # Core MDC theme tokens — these set the fundamental surface/background colours
+  # for ALL MDC components (dialogs, outlined fields, menus, etc.)
+  # Without these, MDC defaults to a white surface (#ffffff)
+  mdc-theme-surface: "#1c1c1e"
+  mdc-theme-background: "#0e0e10"
+  mdc-theme-primary: "#0a84ff"
+  mdc-theme-on-primary: "#ffffff"
+  mdc-theme-on-surface: "#f2f2f7"
+  mdc-theme-text-primary-on-background: "#f2f2f7"
+  mdc-theme-text-secondary-on-background: "rgba(235, 235, 245, 0.60)"
+  mdc-theme-text-hint-on-background: "rgba(235, 235, 245, 0.30)"
+  mdc-theme-text-disabled-on-background: "rgba(235, 235, 245, 0.18)"
+
   # Primary accents — iOS Tahoe Blue
   primary-color: "#0a84ff"                      # iOS blue
   accent-color: "#0a84ff"
