@@ -62,6 +62,15 @@ ios_tahoe_dark:
   mdc-typography-button-font-family: "'JetBrains Mono', monospace"
   mdc-typography-overline-font-family: "'JetBrains Mono', monospace"
 
+  # MDC list — controls sidebar nav items and settings list rows
+  mdc-list-list-item-label-text-font: "'JetBrains Mono', monospace"
+  mdc-list-list-item-supporting-text-font: "'JetBrains Mono', monospace"
+  mdc-list-list-item-trailing-supporting-text-font: "'JetBrains Mono', monospace"
+
+  # Material Design 3 typeface tokens — used by newest HA components
+  md-ref-typeface-brand: "'JetBrains Mono', 'SF Mono', 'Fira Code', monospace"
+  md-ref-typeface-plain: "'JetBrains Mono', 'SF Mono', 'Fira Code', monospace"
+
   # ─────────────────────────────────────────
   # iOS Tahoe Dark — Colour Palette
   # Inspired by macOS/iOS Tahoe's dark mode:
