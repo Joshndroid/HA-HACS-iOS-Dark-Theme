@@ -1,0 +1,205 @@
+# iOS Tahoe Dark Theme for Home Assistant
+# Font: JetBrains Mono
+#
+# INSTALLATION VIA HACS:
+# 1. Add this repository in HACS → Frontend → Custom Repositories
+#    (or find it in the HACS store once listed)
+# 2. Click Install
+# 3. In configuration.yaml, ensure you have:
+#    frontend:
+#      themes: !include_dir_merge_named themes/
+#
+# 4. Load the JetBrains Mono font by adding this to configuration.yaml:
+#    frontend:
+#      extra_module_url:
+#        - /local/jetbrains_mono.js
+#
+# 5. Create /config/www/jetbrains_mono.js with the following content:
+#    const link = document.createElement("link");
+#    link.rel = "stylesheet";
+#    link.href = "https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap";
+#    document.head.appendChild(link);
+#
+# 6. Reload themes via Developer Tools → YAML → Reload Themes
+# 7. Select "iOS Tahoe Dark" in your Profile → Theme
+
+ios_tahoe_dark:
+  # ─────────────────────────────────────────
+  # Typography — JetBrains Mono
+  # ─────────────────────────────────────────
+  primary-font-family: "'JetBrains Mono', 'SF Mono', 'Fira Code', monospace"
+  paper-font-common-base_-_font-family: "'JetBrains Mono', 'SF Mono', monospace"
+  paper-font-common-code_-_font-family: "'JetBrains Mono', monospace"
+  paper-font-body1_-_font-family: "'JetBrains Mono', monospace"
+  paper-font-subhead_-_font-family: "'JetBrains Mono', monospace"
+  paper-font-headline_-_font-family: "'JetBrains Mono', monospace"
+  paper-font-title_-_font-family: "'JetBrains Mono', monospace"
+  paper-font-display1_-_font-family: "'JetBrains Mono', monospace"
+  paper-font-display2_-_font-family: "'JetBrains Mono', monospace"
+  paper-font-display3_-_font-family: "'JetBrains Mono', monospace"
+  paper-font-display4_-_font-family: "'JetBrains Mono', monospace"
+  paper-font-caption_-_font-family: "'JetBrains Mono', monospace"
+  paper-font-menu_-_font-family: "'JetBrains Mono', monospace"
+  paper-font-button_-_font-family: "'JetBrains Mono', monospace"
+
+  # ─────────────────────────────────────────
+  # iOS Tahoe Dark — Colour Palette
+  # Inspired by macOS/iOS Tahoe's dark mode:
+  # deep charcoal backgrounds, frosted glass
+  # surfaces, vibrant blue/teal accents
+  # ─────────────────────────────────────────
+
+  # Backgrounds — layered depth
+  primary-background-color: "#0e0e10"           # Near-black base (visionOS-inspired)
+  secondary-background-color: "#1c1c1e"         # iOS system grouped background dark
+  card-background-color: "#1c1c1e"              # Card surface
+  ha-card-background: "rgba(28, 28, 30, 0.85)"  # Slightly translucent cards
+  divider-color: "rgba(255, 255, 255, 0.08)"    # Subtle separator
+
+  # Frosted / elevated surfaces
+  paper-dialog-background-color: "#2c2c2e"
+  paper-listbox-background-color: "#1c1c1e"
+  paper-item-focused_-_background: "rgba(255, 255, 255, 0.06)"
+  paper-item-focused_-_after_-_opacity: "0"
+  mdc-menu-surface-fill-color: "#2c2c2e"
+  mdc-select-fill-color: "#2c2c2e"
+  mdc-text-field-fill-color: "#2c2c2e"
+
+  # Primary accents — iOS Tahoe Blue
+  primary-color: "#0a84ff"                      # iOS blue
+  accent-color: "#0a84ff"
+  light-primary-color: "#3a9bff"
+  dark-primary-color: "#005ecb"
+
+  # Text colours
+  primary-text-color: "#f2f2f7"                 # iOS label colour
+  secondary-text-color: "rgba(235, 235, 245, 0.60)"   # iOS secondary label
+  disabled-text-color: "rgba(235, 235, 245, 0.30)"    # iOS tertiary label
+  text-primary-color: "#f2f2f7"
+  text-accent-color: "#ffffff"
+  text-light-primary-color: "#0e0e10"
+
+  # Sidebar
+  sidebar-background-color: "#161618"
+  sidebar-selected-background-color: "rgba(10, 132, 255, 0.18)"
+  sidebar-text-color: "#f2f2f7"
+  sidebar-selected-text-color: "#0a84ff"
+  sidebar-icon-color: "rgba(235, 235, 245, 0.60)"
+  sidebar-selected-icon-color: "#0a84ff"
+
+  # Header / Toolbar
+  app-header-background-color: "rgba(14, 14, 16, 0.80)"
+  app-header-text-color: "#f2f2f7"
+  app-header-edit-text-color: "#f2f2f7"
+  app-header-edit-background-color: "#1c1c1e"
+
+  # Cards
+  ha-card-border-radius: "16px"
+  ha-card-border-width: "1px"
+  ha-card-border-color: "rgba(255, 255, 255, 0.07)"
+  ha-card-box-shadow: "0 4px 24px rgba(0, 0, 0, 0.45)"
+
+  # State colours — iOS system palette
+  state-on-color: "#0a84ff"                     # Blue — active
+  state-off-color: "#3a3a3c"                    # iOS system fill dark
+  state-unavailable-color: "rgba(235, 235, 245, 0.18)"
+  state-icon-color: "rgba(235, 235, 245, 0.60)"
+  state-on-icon-color: "#0a84ff"
+
+  # Entity state pills
+  label-badge-background-color: "#1c1c1e"
+  label-badge-text-color: "#f2f2f7"
+  label-badge-red: "#ff453a"                    # iOS system red dark
+  label-badge-blue: "#0a84ff"
+  label-badge-green: "#30d158"                  # iOS system green dark
+  label-badge-yellow: "#ffd60a"                 # iOS system yellow dark
+  label-badge-grey: "#636366"
+
+  # Semantic / system colours
+  error-color: "#ff453a"
+  warning-color: "#ffd60a"
+  success-color: "#30d158"
+  info-color: "#64d2ff"                         # iOS system teal
+
+  # Switches & toggles
+  switch-checked-color: "#0a84ff"
+  switch-checked-button-color: "#ffffff"
+  switch-checked-track-color: "#0a84ff"
+  switch-unchecked-button-color: "#636366"
+  switch-unchecked-track-color: "#3a3a3c"
+
+  # Sliders
+  paper-slider-knob-color: "#ffffff"
+  paper-slider-knob-start-color: "#ffffff"
+  paper-slider-active-color: "#0a84ff"
+  paper-slider-pin-color: "#0a84ff"
+  paper-slider-secondary-color: "rgba(10, 132, 255, 0.28)"
+
+  # Inputs & forms
+  paper-input-container-color: "rgba(255, 255, 255, 0.08)"
+  paper-input-container-focus-color: "#0a84ff"
+  paper-input-container-label-color: "rgba(235, 235, 245, 0.60)"
+  paper-input-container-label-floating-color: "#0a84ff"
+  paper-input-container-input-color: "#f2f2f7"
+  mdc-text-field-ink-color: "#f2f2f7"
+  mdc-text-field-label-ink-color: "rgba(235, 235, 245, 0.60)"
+  mdc-text-field-outlined-idle-border-color: "rgba(255, 255, 255, 0.08)"
+  mdc-text-field-outlined-hover-border-color: "rgba(255, 255, 255, 0.18)"
+
+  # Checkboxes & radio
+  paper-checkbox-checked-color: "#0a84ff"
+  paper-checkbox-unchecked-color: "rgba(235, 235, 245, 0.30)"
+  paper-checkbox-label-color: "#f2f2f7"
+  paper-radio-button-checked-color: "#0a84ff"
+  paper-radio-button-unchecked-color: "rgba(235, 235, 245, 0.30)"
+
+  # Ripple / interaction
+  paper-ripple-opacity: "0.1"
+
+  # Scrollbar (webkit)
+  scrollbar-thumb-color: "rgba(255, 255, 255, 0.18)"
+
+  # Lovelace dashboard
+  masonry-view-transition-duration: "300ms"
+
+  # Map
+  ha-map-filter: "invert(0.9) hue-rotate(180deg) brightness(0.85) contrast(1.1)"
+
+  # Chip / badge styling
+  chip-background-color: "rgba(255, 255, 255, 0.08)"
+  chip-border-radius: "999px"
+
+  # Code / pre elements (benefits from JetBrains Mono)
+  code-editor-background-color: "#0e0e10"
+  codemirror-background: "#0e0e10"
+  codemirror-default-color: "#f2f2f7"
+  codemirror-keyword-color: "#ff7eb6"
+  codemirror-atom-color: "#ff9f0a"
+  codemirror-number-color: "#64d2ff"
+  codemirror-def-color: "#0a84ff"
+  codemirror-variable-color: "#f2f2f7"
+  codemirror-operator-color: "#ff453a"
+  codemirror-comment-color: "#636366"
+  codemirror-string-color: "#30d158"
+  codemirror-meta-color: "#bf5af2"              # iOS system purple
+  codemirror-qualifier-color: "#ff9f0a"
+  codemirror-builtin-color: "#64d2ff"
+  codemirror-tag-color: "#ff453a"
+  codemirror-attribute-color: "#ffd60a"
+  codemirror-callee-color: "#0a84ff"
+  codemirror-property-color: "#bf5af2"
+  codemirror-cursor-color: "#0a84ff"
+  codemirror-selected-color: "rgba(10, 132, 255, 0.25)"
+
+  # Energy dashboard
+  energy-grid-consumption-color: "#0a84ff"
+  energy-grid-return-color: "#30d158"
+  energy-solar-color: "#ffd60a"
+  energy-non-fossil-color: "#30d158"
+  energy-battery-in-color: "#64d2ff"
+  energy-battery-out-color: "#bf5af2"
+  energy-gas-color: "#ff9f0a"
+
+  # Dark mode specifics
+  modes:
+    dark: true
