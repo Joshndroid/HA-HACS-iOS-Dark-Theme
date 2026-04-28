@@ -27,7 +27,11 @@ ios_tahoe_dark:
   # ─────────────────────────────────────────
   # Typography — JetBrains Mono
   # ─────────────────────────────────────────
+
+  # Core HA font variable
   primary-font-family: "'JetBrains Mono', 'SF Mono', 'Fira Code', monospace"
+
+  # Legacy paper-element font overrides
   paper-font-common-base_-_font-family: "'JetBrains Mono', 'SF Mono', monospace"
   paper-font-common-code_-_font-family: "'JetBrains Mono', monospace"
   paper-font-body1_-_font-family: "'JetBrains Mono', monospace"
@@ -41,6 +45,22 @@ ios_tahoe_dark:
   paper-font-caption_-_font-family: "'JetBrains Mono', monospace"
   paper-font-menu_-_font-family: "'JetBrains Mono', monospace"
   paper-font-button_-_font-family: "'JetBrains Mono', monospace"
+
+  # MDC (Material Design Components) typography — used by modern HA UI
+  mdc-typography-font-family: "'JetBrains Mono', 'SF Mono', 'Fira Code', monospace"
+  mdc-typography-body1-font-family: "'JetBrains Mono', monospace"
+  mdc-typography-body2-font-family: "'JetBrains Mono', monospace"
+  mdc-typography-subtitle1-font-family: "'JetBrains Mono', monospace"
+  mdc-typography-subtitle2-font-family: "'JetBrains Mono', monospace"
+  mdc-typography-headline1-font-family: "'JetBrains Mono', monospace"
+  mdc-typography-headline2-font-family: "'JetBrains Mono', monospace"
+  mdc-typography-headline3-font-family: "'JetBrains Mono', monospace"
+  mdc-typography-headline4-font-family: "'JetBrains Mono', monospace"
+  mdc-typography-headline5-font-family: "'JetBrains Mono', monospace"
+  mdc-typography-headline6-font-family: "'JetBrains Mono', monospace"
+  mdc-typography-caption-font-family: "'JetBrains Mono', monospace"
+  mdc-typography-button-font-family: "'JetBrains Mono', monospace"
+  mdc-typography-overline-font-family: "'JetBrains Mono', monospace"
 
   # ─────────────────────────────────────────
   # iOS Tahoe Dark — Colour Palette
