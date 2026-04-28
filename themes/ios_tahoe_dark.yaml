@@ -199,7 +199,3 @@ ios_tahoe_dark:
   energy-battery-in-color: "#64d2ff"
   energy-battery-out-color: "#bf5af2"
   energy-gas-color: "#ff9f0a"
-
-  # Dark mode specifics
-  modes:
-    dark: true
