@@ -94,18 +94,57 @@ ios_tahoe_dark:
   mdc-select-fill-color: "#2c2c2e"
   mdc-text-field-fill-color: "#2c2c2e"
 
-  # Core MDC theme tokens — these set the fundamental surface/background colours
-  # for ALL MDC components (dialogs, outlined fields, menus, etc.)
-  # Without these, MDC defaults to a white surface (#ffffff)
-  mdc-theme-surface: "#1c1c1e"
-  mdc-theme-background: "#0e0e10"
+  # Core MDC theme tokens
   mdc-theme-primary: "#0a84ff"
+  mdc-theme-secondary: "#0a84ff"
+  mdc-theme-background: "#0e0e10"
+  mdc-theme-surface: "#1c1c1e"
   mdc-theme-on-primary: "#ffffff"
+  mdc-theme-on-secondary: "#ffffff"
   mdc-theme-on-surface: "#f2f2f7"
+  mdc-theme-error: "#ff453a"
   mdc-theme-text-primary-on-background: "#f2f2f7"
   mdc-theme-text-secondary-on-background: "rgba(235, 235, 245, 0.60)"
   mdc-theme-text-hint-on-background: "rgba(235, 235, 245, 0.30)"
+  mdc-theme-text-icon-on-background: "rgba(235, 235, 245, 0.60)"
+  mdc-theme-text-disabled-on-light: "rgba(235, 235, 245, 0.30)"
   mdc-theme-text-disabled-on-background: "rgba(235, 235, 245, 0.18)"
+
+  # Material variables (used by some HA settings and dialog components)
+  material-primary-color: "#0a84ff"
+  material-primary-contrast-color: "#ffffff"
+  material-background-color: "#0e0e10"
+  material-secondary-background-color: "#1c1c1e"
+  material-body-text-color: "#f2f2f7"
+  material-disabled-text-color: "rgba(235, 235, 245, 0.30)"
+  material-error-text-color: "#ff453a"
+  material-primary-text-color: "#0a84ff"
+  material-secondary-text-color: "rgba(235, 235, 245, 0.60)"
+  material-disabled-color: "rgba(255, 255, 255, 0.12)"
+  material-divider-color: "rgba(255, 255, 255, 0.08)"
+  material-error-color: "#ff453a"
+
+  # HA form background — controls settings dialog form area backgrounds
+  ha-color-form-background: "#1c1c1e"
+  ha-color-form-background-hover: "#2c2c2e"
+
+  # MDC dialog
+  mdc-dialog-content-ink-color: "#f2f2f7"
+  mdc-dialog-heading-ink-color: "#f2f2f7"
+  mdc-dialog-scroll-divider-color: "rgba(255, 255, 255, 0.08)"
+
+  # MDC button
+  mdc-button-disabled-ink-color: "rgba(235, 235, 245, 0.30)"
+  mdc-button-outline-color: "rgba(255, 255, 255, 0.12)"
+
+  # MDC checkbox & radio
+  mdc-checkbox-disabled-color: "rgba(235, 235, 245, 0.30)"
+  mdc-checkbox-unchecked-color: "rgba(235, 235, 245, 0.54)"
+  mdc-radio-disabled-color: "rgba(235, 235, 245, 0.30)"
+  mdc-radio-unchecked-color: "rgba(235, 235, 245, 0.54)"
+
+  # MDC tab
+  mdc-tab-text-label-color-default: "#f2f2f7"
 
   # Primary accents — iOS Tahoe Blue
   primary-color: "#0a84ff"                      # iOS blue
@@ -205,24 +244,20 @@ ios_tahoe_dark:
   mdc-select-disabled-fill-color: "rgba(28, 28, 30, 0.50)"
   mdc-select-disabled-ink-color: "rgba(235, 235, 245, 0.30)"
   mdc-menu-surface-fill-color: "#2c2c2e"
-  # HA input-* properties (both naming conventions)
+  # HA input-* properties
   input-fill-color: "#2c2c2e"
-  input-text-color: "#f2f2f7"
   input-ink-color: "#f2f2f7"
-  input-label-color: "rgba(235, 235, 245, 0.60)"
   input-label-ink-color: "rgba(235, 235, 245, 0.60)"
+  input-dropdown-icon-color: "rgba(235, 235, 245, 0.60)"
   input-idle-line-color: "rgba(255, 255, 255, 0.20)"
-  input-hover-line-color: "rgba(255, 255, 255, 0.40)"
+  input-hover-line-color: "#0a84ff"
   input-outlined-idle-border-color: "rgba(255, 255, 255, 0.20)"
   input-outlined-hover-border-color: "rgba(255, 255, 255, 0.40)"
-  input-outlined-focus-border-color: "#0a84ff"
+  input-outlined-disabled-border-color: "rgba(235, 235, 245, 0.30)"
   input-disabled-fill-color: "rgba(28, 28, 30, 0.50)"
-  input-disabled-text-color: "rgba(235, 235, 245, 0.30)"
   input-disabled-ink-color: "rgba(235, 235, 245, 0.30)"
-  input-disabled-label-color: "rgba(235, 235, 245, 0.30)"
-  input-disabled-label-ink-color: "rgba(235, 235, 245, 0.30)"
   input-disabled-line-color: "rgba(255, 255, 255, 0.06)"
-  input-disabled-outlined-border-color: "rgba(255, 255, 255, 0.06)"
+  input-disabled-label-ink-color: "rgba(235, 235, 245, 0.30)"
   # Legacy paper-input
   paper-input-container-color: "rgba(255, 255, 255, 0.12)"
   paper-input-container-focus-color: "#0a84ff"
